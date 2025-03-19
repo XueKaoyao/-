@@ -1,6 +1,7 @@
 import random
 import fractions
 import sys
+import cProfile
 
 def generate_fraction(numerator_limit, denominator_limit):
     # 生成真分数，保证分母不为1
@@ -114,3 +115,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+# 性能分析
+cProfile.run('main()')
